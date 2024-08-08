@@ -14,7 +14,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # v1
     - name: Terraform Format
@@ -26,7 +26,7 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # v1
     - name: Azure Login
